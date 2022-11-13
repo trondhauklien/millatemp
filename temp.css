@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+.marquee {
+    color: #ffffff;
+    font-size: 1.5em;
+    background: #de4747;
+    width: 100%;
+    overflow: hidden;
+}
+
+#header {
+  background: linear-gradient(-90deg, #1CB5E0 0%, #000851 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+p.inline {
+  display: inline;
+  margin: 0 1em 1em 0.2em;
+}
+
+.legend {
+  display: inline-block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+
+.stats {
+  background: linear-gradient(-90deg, #1CB5E0 0%, #000851 100%);
+  margin-bottom: 1em;
+}
+
+.stats p, .stats h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#counter {
+  display: inline-block;
+}
+
+#refresh{
+  display: inline-block;
+  float: right;
+}
+
+.section {
+  background: linear-gradient(-90deg, #1CB5E0 0%, #000851 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.nav-header {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+#chartWrapper {
+  position: relative;
+}
+
+#chartWrapper > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+#scrollContainer {
+  overflow: none;
+  overflow-x: auto;
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  #chartContainer {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  #chartContainer {
+    height: 60vh;
+    width: 160vw;
+  }
+}
+
+#yChart {
+  height: 60vh;
+  width: 100%;
+}
+
+.meme {
+  padding: 0 0 1em 0;
+}
+
+.footer {
+  border-top: 1px solid #525252;
+  padding: 1em 0 1em 0;
+  flex-shrink: 0;
+}
+
+.footer li {
+  border: none;
+  padding: 0;
+  margin: 0 1em 0 0;
+}
+
+.footer li:last-child {
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .links {
+    float: right;
+  }
+}
